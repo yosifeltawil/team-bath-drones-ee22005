@@ -1,0 +1,21 @@
+# Ardupilot parameter file
+# Aircraft: Team Bath Drones autonomous UAV
+# Flight controller: SpeedyBee F405 WINGAPP
+
+# === Failsafe configuration ===
+RTL_ALT,5000          # Return-to-launch altitude in cm (50 m)
+FS_LONG_ACTN,1        # Long failsafe action: RTL
+FS_LONG_TIMEOUT,5     # Long failsafe timeout in seconds
+FS_SHORT_ACTN,0       # Short failsafe action: continue mission
+THR_FS_VALUE,950      # Throttle failsafe pulse width (PWM)
+
+# === Battery monitoring ===
+BATT_MONITOR,4        # Voltage and current sensor
+BATT_LOW_VOLT,21.0    # Low battery voltage threshold (6S, 3.5V/cell)
+BATT_LOW_MAH,1500     # Low battery mAh threshold
+BATT_FS_LOW_ACT,2     # Low battery failsafe: RTL
+
+# === Cruise configuration ===
+TRIM_ARSPD_CM,2000    # Cruise airspeed in cm/s (20 m/s)
+ARSPD_FBW_MIN,1500    # Minimum FBW airspeed (15 m/s)
+ARSPD_FBW_MAX,2500    # Maximum FBW airspeed (25 m/s)
