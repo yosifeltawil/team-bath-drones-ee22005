@@ -3,7 +3,7 @@
 # Flight controller: SpeedyBee F405 WINGAPP
 
 # === Failsafe configuration ===
-RTL_ALT,5000          # Return-to-launch altitude in cm (50 m)
+RTL_ALT,3000          # Return-to-launch altitude in cm (30 m)
 FS_LONG_ACTN,1        # Long failsafe action: RTL
 FS_LONG_TIMEOUT,5     # Long failsafe timeout in seconds
 FS_SHORT_ACTN,0       # Short failsafe action: continue mission
